@@ -6,4 +6,4 @@ RUN apk update && \
   apk add --no-cache openssl bash tar sed && \
   rm -rf /var/cache/apk/*
 
-ENTRYPOINT ["/bin/bash"]
+ENTRYPOINT ["/bin/bash", "-l", "-c"]
